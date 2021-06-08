@@ -10,11 +10,11 @@ include __DIR__ . '/data/db.php';
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- style.css -->
-  <link rel="stylesheet" href="assets/style/style.css">
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+  <!-- style.css -->
+  <link rel="stylesheet" href="assets/style/style.css">
   <title>Dischi PHP</title>
 </head>
 <!-- Stampiamo i dischi solo con l’utilizzo di PHP, che stampa direttamente i dischi in pagina: al caricamento della pagina ci saranno tutti i dischi. -->

@@ -22,8 +22,7 @@ const app = new Vue({
         .catch((error) => {
           console.log(error);
         });
-       console.log(this.dischi);
-    },
+        console.log(this.dischi);
+      },
   },
-});
-
+})
