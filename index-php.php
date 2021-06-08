@@ -1,6 +1,5 @@
-<!-- includo il file db.php -->
+<!-- includo il file db.php dal quale estrarró le informazioni che mi serviranno-->
 <?php
-// includo db.php
 include __DIR__ . '/data/db.php';
 ?>
 
@@ -16,9 +15,9 @@ include __DIR__ . '/data/db.php';
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
-  <title>Document</title>
+  <title>Dischi PHP</title>
 </head>
-
+<!-- Stampiamo i dischi solo con l’utilizzo di PHP, che stampa direttamente i dischi in pagina: al caricamento della pagina ci saranno tutti i dischi. -->
 <body>
   <header>
     <div id="h-wrapper">

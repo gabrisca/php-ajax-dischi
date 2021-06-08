@@ -1,3 +1,47 @@
-qui axios chiama api
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- style.css -->
+    <link rel="stylesheet" href="assets/style/style.css" />
+    <title>Dischi VUE</title>
+  </head>
+  <body>
+    <!-- Attraverso l’utilizzo di axios: al caricamento della pagina axios chiederà, attraverso una chiamata api, i dischi a php e li stamperà attraverso vue -->
+    <div id="app">
+      <header>
+        <div id="h-wrapper">
+          <div class="logo">
+            <img src="assets/img/logo.png" alt="logo spotify" />
+          </div>
+        </div>
+      </header>
+      <main>
+        <div id="database" v-for="disco in dischi">
+          <div class="disco">
+            <!-- stampo tutte le informazioni che mi servono -->
+            <img :src="disco.poster" alt="" />
+            <h2>{{disco.title}}</h2>
+            <h3>{{disco.author}}</h3>
+            <h4>{{disco.year}}</h4>
+          </div>
+        </div>
+      </main>
+    </div>
 
-cdn
+    <!-- axios -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+      integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- script.js -->
+    <script src="assets/js/script.js"></script>
+
+    <!-- Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+  </body>
+</html>
