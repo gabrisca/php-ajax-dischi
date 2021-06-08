@@ -3,26 +3,18 @@
 const app = new Vue({
   el: "#app",
   data: {
-    // salvo in endpoint l'url per la chiamata API
-    endpoint: "http://localhost:8888/php-ajax-dischi/php-ajax-dischi/api.php",
     // array vuoto dove fare il push delle informazioni prese attraverso la chiamata API (i dischi)
     dischi: [],
   },
   mounted(){
-    // richiamo la funzione creata in methods e passo come parametro l'endpoint
-    this.callApi(this.endpoint);
-  },
-  methods: {
-    callApi(url) {
-      axios
-        .get(url)
-        .then((risp) => {
-          this.dischi.push(risp.data);
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-        console.log(this.dischi);
-      },
+    axios.get('http://localhost:8888/php-ajax-dischi/php-ajax-dischi/api.php')
+    .then(res => {
+      console.log(res);
+      this.dischi=res.data;
+      console.log(this.dischi);
+    })
+    .catch(err => {
+      console.error(err); 
+    })
   },
 })

@@ -19,8 +19,8 @@
         </div>
       </header>
       <main>
-        <div id="database" v-for="disco in dischi">
-          <div class="disco">
+        <div id="database">
+          <div class="disco"  v-for="disco in dischi">
             <!-- stampo tutte le informazioni che mi servono -->
             <img :src="disco.poster" alt="" />
             <h2>{{disco.title}}</h2>
