@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #1D2C3B;
+}
+
+header #h-wrapper {
+  width: 100%;
+  height: 60px;
+  background-color: #2E3A46;
+}
+
+#h-wrapper .logo {
+  width: 100px;
+  height: 100%;
+  padding: 5px;
+  text-align: center;
+}
+
+#h-wrapper .logo img {
+  height: 90%;
+  cursor: pointer;
+  transition: all 0.8s;
+}
+
+#h-wrapper .logo img:hover {
+  filter: brightness(1.2);
+}
+
+main {
+  width: 80%;
+  margin: 20px auto;
+}
+
+main #database {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#database > .disco {
+  flex-basis: calc(100% / 4);
+  margin: 20px;
+  background-color: #2E3A46;
+  transition: all 0.8s;
+  cursor: pointer;
+  padding: 30px;
+  min-height: 360px;
+  text-align: center;
+}
+
+#database .disco:hover {
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
+
+#database .disco img {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+#database .disco h2 {
+  height: 60px;
+  color: white;
+  font-size: 1.2em;
+  font-weight: initial;
+}
+
+#database .disco h3 {
+  color: rgb(141, 134, 134);
+  font-size: 1.1em;
+  font-weight: initial;
+  margin-bottom: 5px;
+}
+
+#database .disco h4 {
+  color: rgb(141, 134, 134);
+  font-size: .8em;
+  font-weight: initial;
+  margin-bottom: 5px;
+}
+
