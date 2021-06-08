@@ -4,7 +4,7 @@ const app = new Vue({
   el: "#app",
   data: {
     // salvo in endpoint l'url per la chiamata API
-    endpoint: "http://localhost:8888/php-ajax-dischi/php-ajax-dischi/index-vue.html",
+    endpoint: "http://localhost:8888/php-ajax-dischi/php-ajax-dischi/api.php",
     // array vuoto dove fare il push delle informazioni prese attraverso la chiamata API (i dischi)
     dischi: [],
   },
