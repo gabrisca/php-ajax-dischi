@@ -5,6 +5,7 @@ const app = new Vue({
   data: {
     // array vuoto dove fare il push delle informazioni prese attraverso la chiamata API (i dischi)
     dischi: [],
+
     // salvo in una variabile l'endpoint dal quale estrarre informazioni
     endpoint: 'http://localhost:8888/php-ajax-dischi/php-ajax-dischi/api.php',
   },
@@ -28,6 +29,7 @@ const app = new Vue({
       axios.get(url)
       .then((res) => {
         this.dischi = res.data
+        console.log(this.dischi)
       })
       .catch((err) => {
         console.log(err);
