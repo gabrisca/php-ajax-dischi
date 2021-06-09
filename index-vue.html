@@ -21,8 +21,18 @@
           </div>
           <div class="choose_genres">
             <label class='custom-select'>
-              <select name="slct" id="slct">
-                <option selected disabled>Choose a genre</option>
+              <!-- binding v-model di cercaGenere (in script.js) -->
+              <select 
+              @change='getApi'
+              v-model= 'cercaGenere' 
+              name="slct" 
+              id="slct"
+              >
+                <option
+                value="all">Choose a genre</option>
+                <option 
+                v-for= 'genere in generi'
+                :value="genere">{{genere}}</option>
               </select>
             </label>
           </div>

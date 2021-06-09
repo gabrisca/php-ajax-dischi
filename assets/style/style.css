@@ -51,10 +51,11 @@ header #h-wrapper {
 select {
   flex: 1;
   padding: 0 10px;
-  color: #3AD65E;
+  color: white;
   cursor: pointer;
   background-color: #1C2B3B;
-  border-color: #3AD65E;
+  border-radius: 2px;
+  border: 2px solid #3AD65E;
 }
 
 .select::after {
