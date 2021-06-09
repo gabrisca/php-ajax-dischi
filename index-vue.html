@@ -22,7 +22,7 @@
         <div id="database">
           <div class="disco"  v-for="disco in dischi">
             <!-- stampo tutte le informazioni che mi servono -->
-            <img :src="disco.poster" alt="" />
+            <img :src="disco.poster" :alt="disco.title" />
             <h2>{{disco.title}}</h2>
             <h3>{{disco.author}}</h3>
             <h4>{{disco.year}}</h4>
