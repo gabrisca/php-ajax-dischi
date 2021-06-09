@@ -37,13 +37,10 @@ header #h-wrapper {
 
 #h-wrapper .choose_genres .custom-select {
   position: relative;
-  display: block;
-  max-width: 400px;
-  min-width: 180px;
-  margin: 0 auto;
-  border: 1px solid #3ad55f;
-  background-color: #1c2b3b;
-  z-index: 10;
+  display: flex;
+  width: 200px;
+  height: 50px;
+  overflow: hidden;
   transition: all 0.8s;
 }
 
@@ -51,18 +48,26 @@ header #h-wrapper {
   filter: brightness(1.2);
 }
 
-#h-wrapper .choose_genres .custom-select select {
-  border: none;
-  outline: none;
-  background: transparent;
-  appearance: none;
-  border-radius: 0;
-  margin: 0;
-  display: block;
-  width: 100%;
-  padding: 12px 55px 15px 15px;
-  font-size: 14px;
-  color: white;
+select {
+  flex: 1;
+  padding: 0 10px;
+  color: #3AD65E;
+  cursor: pointer;
+  background-color: #1C2B3B;
+  border-color: #3AD65E;
+}
+
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  padding-right: 15px;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  -o-transition: .25s all ease;
+  transition: .25s all ease;
 }
 
 main {
