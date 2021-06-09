@@ -9,7 +9,7 @@ const app = new Vue({
     endpoint: 'http://localhost:8888/php-ajax-dischi/php-ajax-dischi/api.php',
   },
   mounted() {
-    // metodo 1: chiamata diretta
+    // opzione 1: chiamata diretta
 
     // axios
     //   .get("http://localhost:8888/php-ajax-dischi/php-ajax-dischi/api.php")
@@ -22,7 +22,7 @@ const app = new Vue({
     //     console.error(err);
     //   });
   },
-  // metodo 2: creo una funzione per la chiamata axios
+  // opzione 2: creo una funzione per la chiamata axios
   methods: {
     getApi(url){
       axios.get(url)
