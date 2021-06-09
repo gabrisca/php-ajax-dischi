@@ -5,18 +5,21 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #1D2C3B;
+  font-family: "Roboto", sans-serif;
+  background-color: #1d2c3b;
 }
 
 header #h-wrapper {
   width: 100%;
   height: 60px;
-  background-color: #2E3A46;
+  background-color: #2e3a46;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 23px;
 }
 
 #h-wrapper .logo {
-  width: 100px;
   height: 100%;
   padding: 5px;
   text-align: center;
@@ -30,6 +33,36 @@ header #h-wrapper {
 
 #h-wrapper .logo img:hover {
   filter: brightness(1.2);
+}
+
+#h-wrapper .choose_genres .custom-select {
+  position: relative;
+  display: block;
+  max-width: 400px;
+  min-width: 180px;
+  margin: 0 auto;
+  border: 1px solid #3ad55f;
+  background-color: #1c2b3b;
+  z-index: 10;
+  transition: all 0.8s;
+}
+
+#h-wrapper .choose_genres .custom-select:hover {
+  filter: brightness(1.2);
+}
+
+#h-wrapper .choose_genres .custom-select select {
+  border: none;
+  outline: none;
+  background: transparent;
+  appearance: none;
+  border-radius: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+  padding: 12px 55px 15px 15px;
+  font-size: 14px;
+  color: white;
 }
 
 main {
@@ -47,7 +80,7 @@ main #database {
 #database > .disco {
   flex-basis: calc(100% / 4);
   margin: 20px;
-  background-color: #2E3A46;
+  background-color: #2e3a46;
   transition: all 0.8s;
   cursor: pointer;
   padding: 30px;
@@ -81,8 +114,7 @@ main #database {
 
 #database .disco h4 {
   color: rgb(141, 134, 134);
-  font-size: .8em;
+  font-size: 0.8em;
   font-weight: initial;
   margin-bottom: 5px;
 }
-
